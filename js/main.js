@@ -16,10 +16,6 @@ function getMainMenu() {
             if (currentPath.includes(menuItem.url)) {
                 hyperlink = `<a>${menuItem.name}</a>`;
             }
-            if (menuItem?.subMenu) {
-                hyperlink = hyperlink.replace('</a>','<img class="dropdown-icon" src="./assets/icons/dropdown.svg"></a>');
-            }
-
             menuContent += `<li class="menu-item">${hyperlink}</li>`;
         }
         menuContent = '<nav><ul>' + menuContent + '</ul></nav>';
