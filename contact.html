@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact - Sarath Sivadasan</title>
+        <meta name="description" content="Contact Details of Sarath Sivadasan">
+        <!-- For responsive web design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./js/main.js" defer></script>
+        <script src="./js/contact.js" defer></script>
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/contact.css">
+    </head>
+    <body>
+        <header id="main-menu"></header>
+        <main>
+            <section id="contact-section">
+                <div class="contact-form">
+                    <form name="contactForm" novalidate onsubmit="return validateForm();">
+                        <div class="name">
+                            <div class="form-control">
+                                <label for="firstName">First Name</label>
+                                <input name="firstName" id="firstName" required>
+                                <p id="firstname-error" class="error-msg"></p>
+                            </div>
+                            <div class="form-control">
+                                <label for="lastName">Last Name</label>
+                                <input name="lastName" id="lastName" required>
+                                <p id="lastname-error" class="error-msg"></p>
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input name="email" id="email" type="email" required>
+                            <p id="email-error" class="error-msg"></p>
+                        </div>
+                        <div class="form-control">
+                            <label for="subject">Subject</label>
+                            <input name="subject" id="subject">
+                        </div>
+                        <div class="form-control">
+                            <label for="message">Message</label>
+                            <textarea class="message-box" name="message" id="message"></textarea>
+                        </div>
+                        <div class="form-control center-align">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-img">
+                    <div class="hero-text-box">
+                        <h1 class="contact-text">GET IN TOUCH!!!</h1>
+                    </div>
+                    <img class="contact-img" src="./assets/images/contact.jpg">
+                </div>
+            </section>
+            <section>
+
+            </section>
+            <section>
+                <div class="social contact-alignment">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/group.png" alt="group"/>
+                    <h2>Social</h2>
+                </div>
+                <div class="social-list">
+                    <a href="https://www.linkedin.com/in/sarath-sivadasan-117b11169/" target="_blank">
+                        <img width="50" height="50" src="./assets/icons/linkedin.svg" alt="LinkedIn"/>
+                    </a>
+                    <a href="https://www.facebook.com/kailassarathsivadasan/" target="_blank">
+                        <img width="50" height="50" src="./assets/icons/facebook.svg" alt="Facebook"/>
+                    </a>
+                    <a href="https://www.instagram.com/kailassarathsivadasan/" target="_blank">
+                        <img width="50" height="50" src="./assets/icons/instagram.svg" alt="Instagram"/>
+                    </a>
+                    <a href="https://www.youtube.com/@sarathsivadasan8639" target="_blank">
+                        <img width="50" height="50" src="./assets/icons/youtube.svg" alt="Youtube"/>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer id="main-footer"></footer>
+    </body>
+</html>

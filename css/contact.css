@@ -1,0 +1,95 @@
+#contact-section {
+    height: 800px;
+    background-color: #E8E4E4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-img img {
+    height: 800px;
+    width: 50vw;
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 98vw;
+    text-align: center;
+}
+
+.contact-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 250%;
+    font-weight: 300;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+form {
+    padding-top: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 100px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-bottom: 15px;
+}
+
+.name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+}
+
+input, textarea {
+    width: 100%;
+    height: 30px;
+    font-size: medium;
+    padding: 5px 10px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.center-align {
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+label {
+    font-size: small;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.input-error {
+    border: 1px solid red;
+}
+
+.error-msg {
+    color: red;
+    font-size: 10px;
+    margin: 0;
+}

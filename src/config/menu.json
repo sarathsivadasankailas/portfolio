@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Home",
+        "url": "index.html"
+    },
+    {
+        "name": "Career",
+        "url": "career.html"
+    },
+    {
+        "name": "Blogs",
+        "url": "blogs.html",
+        "subMenu": [
+            {
+                "name": "My Travel Expeditions",
+                "url": "travel.html"
+            },
+            {
+                "name": "Cherishable Moments Captured",
+                "url": "photography.html"
+            },
+            {
+                "name": "My Cooking Experiments",
+                "url": "cooking.html"
+            }
+        ]
+    },
+    {
+        "name": "Contact",
+        "url": "contact.html"
+    }
+]
