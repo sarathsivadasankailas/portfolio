@@ -35,3 +35,8 @@ function getFooter() {
 }
 
 const mainContent = document.getElementsByTagName('main');
+
+
+function openResume() {
+    window.open('../assets/docs/SARATH_SIVADASAN_RESUME.pdf', '_blank');
+}
