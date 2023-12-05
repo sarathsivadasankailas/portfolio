@@ -8,22 +8,12 @@
         "url": "career.html"
     },
     {
+        "name": "Education",
+        "url": "education.html"
+    },
+    {
         "name": "Blogs",
-        "url": "blogs.html",
-        "subMenu": [
-            {
-                "name": "My Travel Expeditions",
-                "url": "travel.html"
-            },
-            {
-                "name": "Cherishable Moments Captured",
-                "url": "photography.html"
-            },
-            {
-                "name": "My Cooking Experiments",
-                "url": "cooking.html"
-            }
-        ]
+        "url": "blogs.html"
     },
     {
         "name": "Contact",

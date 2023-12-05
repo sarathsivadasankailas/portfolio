@@ -56,7 +56,7 @@ body {
     }
 
     .career-text-box {
-        top: calc(100vw/1.5);
+        top: calc(100vw/1.25);
     }
 
     .career-text-box > h1 {
