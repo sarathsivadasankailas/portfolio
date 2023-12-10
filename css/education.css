@@ -1,0 +1,132 @@
+body {
+    background-color: #D0CCE0;
+}
+
+#education-header {
+    background-color: #EAEAEA;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    background-image: url('../assets/images/education-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.education-text {
+    position: absolute;
+    top: 250px;
+    left: 60%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.education-text > h1 {
+    font-size: 250%;
+    color: #3E6D8E;
+}
+
+/********** TAB VIEW *******************/
+@media only screen and (max-width: 850px) {
+    
+    .education-text > h1 {
+        font-size: 200%;
+    }
+}
+
+/********** MOBILE VIEW *******************/
+@media only screen and (max-width: 600px) {
+
+    .education-text {
+        position: relative;
+        top: 200px;
+        left: 25%;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .education-text > h1 {
+        font-size: 150%;
+    }
+}
+
+.degrees {
+    display: flex;
+    flex-direction: row;
+}
+
+.institution {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 25px;
+    margin: 25px;
+    padding-bottom: 50px;
+}
+
+.institution:first-child {
+    padding-top: 50px;
+}
+
+.institution:last-child {
+    padding-bottom: 50px;
+}
+
+.institution-logo {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.institution-logo-round {
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    height: 100px;
+    max-width: 200px;
+}
+
+.institution-logo-square {
+    background-color: white;
+    height: 100px;
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.education-header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: #3E6D8E;
+    /* background-color: #9352A4; */
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.education-header-column {
+    padding: 10px 15px;
+}
+
+.education-header-column > h4 {
+    text-align: right;
+}
+
+.course-details {
+    background-color: #E1E1EB;
+    /* background-color: #EDBEFF; */
+    padding: 10px;
+    line-height: 1.6;
+}
+
+
+/********** MOBILE VIEW ****************/
+@media only screen and (max-width: 600px) {
+    .institution {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin: 25px;
+        padding-bottom: 50px;
+    }
+}
