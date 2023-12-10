@@ -26,7 +26,7 @@
 
 .my-blog {
     display: grid;
-    height: 70%;
+    /* height: 70%; */
     grid-template-columns: 1fr 1fr;
 }
 
@@ -37,9 +37,6 @@
     text-align: center;
 }
 
-/* .blog-content:hover {
-    border: 1px solid white;
-} */
 
 .description {
     text-align: justify;
@@ -58,7 +55,8 @@
 }
 
 /* .blog-button {
-    padding: 10px;
+    position: inherit;
+    bottom: 50px;
 } */
 
 button {
@@ -68,9 +66,43 @@ button {
     background-color: transparent;
     border: 1px solid white;
     color: white;
+    margin-bottom: 25px;
 }
 
 button:hover {
     background-color: #292929;
     font-weight: bolder;
+}
+
+
+/********** TAB VIEW *******************/
+@media only screen and (max-width: 850px) {
+
+    .blog-header {
+        height: 20%;
+    }
+
+    .text-box {
+        font-size: 200%;
+    }
+
+    .blog-content {
+        border-radius: 25px;
+        margin: 0 8% 100px 8%;
+    }
+
+}
+
+/********** MOBILE VIEW *******************/
+@media only screen and (max-width: 600px) {
+
+    .blogs {
+        height: 100vh;
+        min-height: 2000px;
+    }
+
+    .my-blog {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }

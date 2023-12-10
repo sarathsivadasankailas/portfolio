@@ -8,6 +8,15 @@
         <script src="./js/main.js" defer></script>
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/blogs.css">
+        <script>
+            function navigateToTravelogue() {
+                window.location.href = 'travelogue.html';
+            }
+
+            function navigateToPhotography() {
+                window.location.href = 'photography.html';
+            }
+        </script>
     </head>
     <body>
         <header id="main-menu"></header>
@@ -33,7 +42,7 @@
                                 </p>
                             </div>
                             <div class="blog-button">
-                                <button>Visit my Travelogue</button>
+                                <button onclick="navigateToTravelogue()">Visit my Travelogue</button>
                             </div>
                         </div>
                         <div class="blog-content">
@@ -43,12 +52,13 @@
                             <h1>Moments Captured!!!</h1>
                             <div>
                                 <p class="description">
+                                    "A gallery of memories etched in the canvases of my hearts."
                                     In the kaleidoscope of my journey, every photograph tells a story, freezing time to immortalize the beauty, laughter, and serendipity discovered along the way. 
                                     From the vibrant cityscapes pulsating with life to the tranquil landscapes whispering tales of serenity, every click is a heartbeat, echoing the essence of the places I've wandered.
                                 </p>
                             </div>
                             <div class="blog-button">
-                                <button>See my Photography</button>
+                                <button onclick="navigateToPhotography()">See my Photography</button>
                             </div>
                         </div>
                     </div>
