@@ -84,7 +84,7 @@ body {
     background-color: white;
     border-radius: 50%;
     height: 100px;
-    max-width: 200px;
+    max-width: 150px;
 }
 
 .institution-logo-square {
@@ -119,6 +119,15 @@ body {
     line-height: 1.6;
 }
 
+/********** TAB VIEW *******************/
+@media only screen and (max-width: 850px) {
+    
+    .institution-logo-square {
+        height: 75px;
+        min-width: 150px;
+        max-width: 150px;
+    }
+}
 
 /********** MOBILE VIEW ****************/
 @media only screen and (max-width: 600px) {
@@ -128,5 +137,11 @@ body {
         gap: 25px;
         margin: 25px;
         padding-bottom: 50px;
+    }
+
+    .institution-logo-square {
+        height: 100px;
+        min-width: 200px;
+        max-width: 200px;
     }
 }

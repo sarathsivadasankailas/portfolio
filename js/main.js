@@ -5,7 +5,7 @@ footer.innerHTML = getFooter();
 
 function getMainMenu() {
     let currentPath = window.location.href;
-    fetch('./src/config/menu.json').
+    fetch('./assets/config/menu.json').
     then(response => {
         return response.json();
     }).then(jsonData => {
