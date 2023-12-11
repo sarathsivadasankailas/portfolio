@@ -1,0 +1,88 @@
+.body {
+    background-color: #F1F1EF;
+}
+
+.main-heading {
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    background-color: grey;
+    display: table;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/images/memories/header.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main-heading > h1 {
+    margin: 0px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 350%;
+    color: white;
+}
+
+.photography-page {
+    margin: 50px;
+}
+
+.section-caption {
+    margin-top: 50px;
+    padding: 25px 0;
+}
+
+.section-caption span {
+    background-color: #686C6F;
+    color: white;
+    padding: 15px;
+    padding-right: 100px;
+    padding-left: 30px;
+    clip-path: polygon(0% 0%, 100% 0%, calc(100% - 35px) 50%, 100% 100%, 0% 100%);
+}
+
+.column-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+    gap: 25px;
+}
+
+.column-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    gap: 25px;
+}
+
+.column-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.column {
+    padding-bottom: 40px;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.column-3 img {
+    height: 50vh;
+}
+
+.column-2 img {
+    height: 50vh;
+}
+
+.column-1 img {
+    height: 80vh;
+}
+
+.image-caption {
+    text-align: center;
+}
