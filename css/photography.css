@@ -72,17 +72,60 @@
 }
 
 .column-3 img {
-    height: 50vh;
+    max-height: 30vw;
 }
 
 .column-2 img {
-    height: 50vh;
+    max-height: 20vw;
 }
 
 .column-1 img {
-    height: 80vh;
+    max-height: 40vw;
 }
 
 .image-caption {
     text-align: center;
+}
+
+
+/********** TAB VIEW *******************/
+@media only screen and (max-width: 850px) {
+    .main-heading > h1 {
+        font-size: 300%;
+    }
+
+    .section-caption span {
+        padding-right: 60px;
+        padding-left: 20px;
+    }
+
+}
+
+
+/********** MOBILE VIEW *******************/
+@media only screen and (max-width: 600px) {
+    .main-heading > h1 {
+        font-size: 150%;
+    }
+
+    .section-caption span {
+        font-size: 70%;
+        padding-right: 40px;
+        padding-left: 15px;
+        clip-path: polygon(0% 0%, 100% 0%, calc(100% - 25px) 50%, 100% 100%, 0% 100%);
+    }
+
+    .column-3, .column-2 {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .image-caption {
+        font-size: 80%;
+    }
+
+    .column-3 img, .column-2 img, .column-1 img {
+        max-width: 80vw;
+        max-height: 100%;
+    }
 }

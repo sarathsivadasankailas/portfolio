@@ -99,6 +99,8 @@ body {
 
 .paris-1 img {
     width: 20vw;
+    height: 100%;
+    overflow: hidden;
 }
 
 .paris-2 {
@@ -108,6 +110,8 @@ body {
 
 .paris-2 img {
     width: 20vw;
+    height: 100%;
+    overflow: hidden;
 }
 
 .paris-3 {
@@ -117,6 +121,8 @@ body {
 
 .paris-3 video {
     width: 20vw;
+    height: 100%;
+    overflow: hidden;
 }
 
 .paris-4 {
@@ -126,6 +132,8 @@ body {
 
 .paris-4 img {
     width: 20vw;
+    height: 100%;
+    overflow: hidden;
 }
 
 .paris-5 {
@@ -135,6 +143,8 @@ body {
 
 .paris-5 img {
     width: 20vw;
+    height: 100%;
+    overflow: hidden;
 }
 
 
