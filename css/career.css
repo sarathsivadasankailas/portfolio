@@ -265,3 +265,112 @@ button:hover {
     }
 
 }
+
+
+/******** Table **********/
+/* Experience */
+#experience {
+    color: black;
+    background-color: white;
+    padding: 50px 5% 100px 5%;
+}
+
+/* Remove borders */
+table, th, td {
+    border-spacing: 0;
+}
+
+/* Curved border for table header */
+thead tr th:first-of-type {
+    border-top-left-radius: 8px;
+}
+
+thead tr th:last-of-type {
+    border-top-right-radius: 8px;
+}
+
+/*Table row color*/
+tr {
+    background-color: #CCCCCC;
+}
+
+/* Table header row design */
+thead tr {
+    background-color: black;
+    color: white;
+    font-size: large;
+    height: 75px;
+}
+
+/* Table alternate row design */
+tr:nth-child(even) {
+    background-color: #999999;
+}
+
+/* Table hover effect */
+tbody tr:hover {
+    color: white;
+    background-color: #545454;
+}
+
+/*Set minimum width for the last column.*/
+tbody td:last-of-type {
+    min-width: 250px;
+}
+
+/*Table last row border */
+tbody tr:last-of-type td {
+    border-bottom: 4px solid black;
+}
+
+/* Spacing */
+td {
+    padding-left: 10px;
+}
+
+/********** MOBILE VIEW ****************/
+@media only screen and (max-width: 600px) {
+    tbody td:last-of-type {
+        min-width: 150px;
+    }
+
+    td > ul {
+        padding-left: 10px;
+    }
+}
+
+.employment-list {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding: 50px 15%;
+}
+
+.employment-list img {
+    height: 100px;
+}
+
+/********** TAB VIEW *******************/
+@media only screen and (max-width: 850px) {
+    
+    .employment-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+
+/********** MOBILE VIEW ****************/
+@media only screen and (max-width: 600px) {
+
+    .employment-list img {
+        height: 50px;
+    }
+}
+
