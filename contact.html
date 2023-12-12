@@ -7,8 +7,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="./js/main.js" defer></script>
         <script src="./js/contact.js" defer></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/contact.css">
+        <script>
+            function sendEmail() {
+                let firstName = document.getElementById('firstName').value;
+                let lastName = document.getElementById('lastName').value;
+                let email = document.getElementById('email').value;
+                let subject = document.getElementById('subject').value;
+                let message = document.getElementById('message').value;
+                let messageBody = `First Name: ${firstName} \n
+                                Last Name: ${lastName} \n
+                                Email: ${email} \n
+                                Message: ${message}`;
+
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "testmailsarathsivadasan@gmail.com",
+                    Password : "CA9498873F143A81A69F12FF994ABE082AD7",
+                    To : "testmailsarathsivadasan@gmail.com",
+                    From : "testmailsarathsivadasan@gmail.com",
+                    Subject : subject,
+                    Body : messageBody
+                }).then(
+                    console.log('Email sent')
+                );
+            }
+        </script>
     </head>
     <body>
         <header id="main-menu"></header>

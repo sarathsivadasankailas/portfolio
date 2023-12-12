@@ -58,5 +58,9 @@ function validateForm() {
         document.getElementById('email-error').innerText += '* Wrong email format.';
     }
 
+    if (valid) {
+        sendEmail();
+    }
+
     return valid;
 }

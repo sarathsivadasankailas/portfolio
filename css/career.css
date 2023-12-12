@@ -273,6 +273,7 @@ button:hover {
     color: black;
     background-color: white;
     padding: 50px 5% 100px 5%;
+    line-height: 1.5;
 }
 
 /* Remove borders */
