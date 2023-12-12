@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: "Clarkson",Helvetica,sans-serif;
+}
+
+/* Main Menu */
+#main-menu {
+    background-color: black;
+    border: 10px solid black;
+}
+
+/* Menu List */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+/* Menu item */
+.menu-item > a {
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+}
+
+/* Menu item mouse hover */
+.menu-item > a:hover {
+    color: lightblue;
+}
+
+.dropdown-icon {
+    margin-left: 2px;
+    position: relative;
+    width: 18px;
+    height: 16px;
+}
+
+/* Footer design */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    background-color: black;
+    color: white;
+}
+
+
+/*******************************************
+ *************** Tablet View ***************
+*******************************************/
+@media only screen and (max-width: 850px) {
+    nav ul {
+        justify-content: left;
+        column-gap: 25px;
+    }
+}
+
+
+/*******************************************
+ *************** Mobile View ***************
+*******************************************/
+@media only screen and (max-width: 600px) {
+    nav ul {
+        justify-content: left;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    footer {
+        font-size: small;
+    }
+}

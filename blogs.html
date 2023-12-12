@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Blogs - Sarath Sivadasan</title>
+        <meta name="description" content="Blogs of Sarath Sivadasan">
+        <!-- For responsive web design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./js/main.js" defer></script>
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/blogs.css">
+        <script>
+            function navigateToTravelogue() {
+                window.location.href = 'travelogue.html';
+            }
+
+            function navigateToPhotography() {
+                window.location.href = 'photography.html';
+            }
+        </script>
+    </head>
+    <body>
+        <header id="main-menu"></header>
+        <main>
+            <section id="blogs">
+                <div class="blogs">
+                    <div class="blog-header">
+                        <div class="text-box">
+                            <h1>My Blogs</h1>
+                        </div>
+                    </div>
+                    <div class="my-blog">
+                        <div class="blog-content">
+                            <div class="image">
+                                <img src="./assets/images/travelogue.jpg" alt="travelogue">
+                            </div>
+                            <h2>My Travelogue!!!</h2>
+                            <div>
+                                <p class="description">
+                                    "Lost in the beauty of unfamiliar places, finding myself in every adventure."
+                                    From bustling city streets to serene natural wonders, my travelogue serves as a testament to the kaleidoscope of experiences etched into the canvas of my journey. 
+                                    Through the lens of my adventures, the travelogue becomes a passport to my soul, a chronicle of personal growth, and an invitation for others to embark on their own odyssey of discovery.
+                                </p>
+                            </div>
+                            <div class="blog-button">
+                                <button onclick="navigateToTravelogue()">Visit my Travelogue</button>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="image">
+                                <img src="./assets/images/memories.jpg" alt="memories">
+                            </div>
+                            <h1>Moments Captured!!!</h1>
+                            <div>
+                                <p class="description">
+                                    "A gallery of memories etched in the canvases of my hearts."
+                                    In the kaleidoscope of my journey, every photograph tells a story, freezing time to immortalize the beauty, laughter, and serendipity discovered along the way. 
+                                    From the vibrant cityscapes pulsating with life to the tranquil landscapes whispering tales of serenity, every click is a heartbeat, echoing the essence of the places I've wandered.
+                                </p>
+                            </div>
+                            <div class="blog-button">
+                                <button onclick="navigateToPhotography()">See my Photography</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="main-footer"></footer>
+    </body>
+</html>

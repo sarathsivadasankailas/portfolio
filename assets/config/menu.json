@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Home",
+        "url": "index.html"
+    },
+    {
+        "name": "Career",
+        "url": "career.html"
+    },
+    {
+        "name": "Education",
+        "url": "education.html"
+    },
+    {
+        "name": "Blogs",
+        "url": "blogs.html"
+    },
+    {
+        "name": "Contact",
+        "url": "contact.html"
+    }
+]

@@ -1,0 +1,377 @@
+/** Header Section **/
+body {
+    background-color: #F1F1EF;
+}
+
+#career-header {
+    background-color: #F1F1EF;
+}
+
+.career-header-image > img {
+    width: 100vw;
+    height: auto;
+}
+
+.career-text-box {
+    position: absolute;
+    top: calc(100vw/3);
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.career-text-box > h1 {
+    font-size: 250%;
+}
+
+.career-profile {
+    position: absolute;
+    left: 70vw;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+.career-profile > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+
+/********** TAB VIEW *******************/
+@media only screen and (max-width: 850px) {
+    
+    .career-text-box > h1 {
+        font-size: 150%;
+    }
+}
+
+
+/********** MOBILE VIEW ****************/
+@media only screen and (max-width: 600px) {
+
+    .career-profile {
+        margin-top: 10px;
+    }
+
+    .career-text-box {
+        top: calc(100vw/1.25);
+    }
+
+    .career-text-box > h1 {
+        font-size: 100%;
+    }
+}
+
+/** Career Introduction **/
+#career-intro {
+    background-color: #F1F1EF;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+.resume {
+    width: 50vw;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.resume img {
+    height: 200px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+
+button:hover {
+    background-color: #292929;
+    font-weight: bolder;
+}
+
+.introduction {
+    width: 50vw;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.introduction > p {
+    margin: 25px;
+}
+
+/********** TAB VIEW *******************/
+@media only screen and (max-width: 850px) {
+    #career-intro {
+        background-color: #F1F1EF;
+        height: 450px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+/********** MOBILE VIEW ****************/
+@media only screen and (max-width: 600px) {
+    #career-intro {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resume {
+        width: 100vw;
+        margin: 0;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduction {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* Technical Skills */
+#technical {
+    background-color: #FDF0E6;
+}
+
+.technical {
+    display: flex;
+    flex-direction: row;
+}
+
+.technical-skills {
+    width: 50vw;
+    padding: 25px;
+    text-align: justify;
+    line-height: 2.0;
+}
+
+.technologies {
+    width: 50vw;
+    padding: 25px;
+}
+
+.technical-skills ul {
+    list-style: none;
+    align-items: center;
+}
+
+.technical-skills ul li:before {
+    content: url("../assets/icons/icons8-tick.svg");
+}
+
+.technologies ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    padding: 5px;
+    justify-content: center;
+}
+
+.technologies .tech-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.technologies .tech-icon-long {
+    width: 120px;
+    height: 60px;
+}
+
+/********** TAB VIEW *******************/
+@media only screen and (max-width: 850px) {
+
+    .technologies .tech-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .technologies .tech-icon-long {
+        width: 100px;
+        height: 50px;
+    }
+
+}
+
+
+/********** MOBILE VIEW ****************/
+@media only screen and (max-width: 600px) {
+    .technical {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .technologies {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .technical-skills {
+        width: 100%;
+        padding: 0;
+    }
+    .technical-skills h2 {
+        margin: 20px;
+    }
+
+    .technical-skills ul {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .technologies {
+        padding: 0px;
+    }
+
+    .technologies ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+        padding: 5px;
+    }
+
+    .technologies .tech-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .technologies .tech-icon-long {
+        width: 100px;
+        height: 50px;
+    }
+
+}
+
+
+/******** Table **********/
+/* Experience */
+#experience {
+    color: black;
+    background-color: white;
+    padding: 50px 5% 100px 5%;
+    line-height: 1.5;
+}
+
+/* Remove borders */
+table, th, td {
+    border-spacing: 0;
+}
+
+/* Curved border for table header */
+thead tr th:first-of-type {
+    border-top-left-radius: 8px;
+}
+
+thead tr th:last-of-type {
+    border-top-right-radius: 8px;
+}
+
+/*Table row color*/
+tr {
+    background-color: #CCCCCC;
+}
+
+/* Table header row design */
+thead tr {
+    background-color: black;
+    color: white;
+    font-size: large;
+    height: 75px;
+}
+
+/* Table alternate row design */
+tr:nth-child(even) {
+    background-color: #999999;
+}
+
+/* Table hover effect */
+tbody tr:hover {
+    color: white;
+    background-color: #545454;
+}
+
+/*Set minimum width for the last column.*/
+tbody td:last-of-type {
+    min-width: 250px;
+}
+
+/*Table last row border */
+tbody tr:last-of-type td {
+    border-bottom: 4px solid black;
+}
+
+/* Spacing */
+td {
+    padding-left: 10px;
+}
+
+/********** MOBILE VIEW ****************/
+@media only screen and (max-width: 600px) {
+    tbody td:last-of-type {
+        min-width: 150px;
+    }
+
+    td > ul {
+        padding-left: 10px;
+    }
+}
+
+.employment-list {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding: 50px 15%;
+}
+
+.employment-list img {
+    height: 100px;
+}
+
+/********** TAB VIEW *******************/
+@media only screen and (max-width: 850px) {
+    
+    .employment-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+
+/********** MOBILE VIEW ****************/
+@media only screen and (max-width: 600px) {
+
+    .employment-list img {
+        height: 50px;
+    }
+}
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact - Sarath Sivadasan</title>
+        <meta name="description" content="Contact Details of Sarath Sivadasan">
+        <!-- For responsive web design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./js/main.js" defer></script>
+        <script src="./js/contact.js" defer></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/contact.css">
+        <script>
+            function sendEmail() {
+                let firstName = document.getElementById('firstName').value;
+                let lastName = document.getElementById('lastName').value;
+                let email = document.getElementById('email').value;
+                let subject = document.getElementById('subject').value;
+                let message = document.getElementById('message').value;
+                let messageBody = `First Name: ${firstName} \n
+                                Last Name: ${lastName} \n
+                                Email: ${email} \n
+                                Message: ${message}`;
+
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "testmailsarathsivadasan@gmail.com",
+                    Password : "CA9498873F143A81A69F12FF994ABE082AD7",
+                    To : "testmailsarathsivadasan@gmail.com",
+                    From : "testmailsarathsivadasan@gmail.com",
+                    Subject : subject,
+                    Body : messageBody
+                }).then(
+                    console.log('Email sent')
+                );
+            }
+        </script>
+    </head>
+    <body>
+        <header id="main-menu"></header>
+        <main>
+            <section id="contact-section">
+                <div class="contact-form">
+                    <form name="contactForm" novalidate onsubmit="return validateForm();">
+                        <div class="name">
+                            <div class="form-control">
+                                <label for="firstName">First Name</label>
+                                <input name="firstName" id="firstName" required>
+                                <p id="firstname-error" class="error-msg"></p>
+                            </div>
+                            <div class="form-control">
+                                <label for="lastName">Last Name</label>
+                                <input name="lastName" id="lastName" required>
+                                <p id="lastname-error" class="error-msg"></p>
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input name="email" id="email" type="email" required>
+                            <p id="email-error" class="error-msg"></p>
+                        </div>
+                        <div class="form-control">
+                            <label for="subject">Subject</label>
+                            <input name="subject" id="subject">
+                        </div>
+                        <div class="form-control">
+                            <label for="message">Message</label>
+                            <textarea class="message-box" name="message" id="message"></textarea>
+                        </div>
+                        <div class="form-control center-align">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-img">
+                    <div class="hero-text-box">
+                        <h1 class="contact-text">GET IN TOUCH!!!</h1>
+                    </div>
+                    <!-- class="contact-img"  -->
+                    <img src="./assets/images/contact.jpg" alt="Contact header">
+                </div>
+            </section>
+            <section id="contact-info-section">
+                <div class="contact-me">
+                    <img src="./assets/images/phone-email.jpg" alt="Contact Me">
+                </div>
+                <div class="phone-email">
+                    <div class="phone contact-alignment">
+                        <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/phone.png" alt="phone">
+                        <h2>Phone</h2>
+                    </div>
+                    <p class="phone-no">(262) 271 6756</p>
+                    <div>
+                        <div class="email contact-alignment">
+                            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/secured-letter--v1.png" alt="secured-letter--v1">
+                            <h2>Email</h2>
+                        </div>
+                        <dl>
+                            <dt class="contact-alignment email-type">BU Mail</dt>
+                            <dd class="contact-alignment email-id"><a href="mailto:saraths@bu.edu">saraths@bu.edu</a></dd>
+                            <dt class="contact-alignment email-type">Work Mail</dt>
+                            <dd class="contact-alignment email-id"><a href="mailto:ssivadasan@bjs.com">ssivadasan@bjs.com</a></dd>
+                            <dt class="contact-alignment email-type">Personal Mail</dt>
+                            <dd class="contact-alignment email-id"><a href="mailto:sarath.sivadasan1987@gmail.com">sarath.sivadasan1987@gmail.com</a></dd>
+                        </dl>
+                    </div>    
+                </div>
+            </section>
+            <section id="social-section">
+                <div class="social">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/group.png" alt="group">
+                    <h2>Social</h2>
+                </div>
+                <div class="social-list">
+                    <a href="https://www.linkedin.com/in/sarath-sivadasan-117b11169/" target="_blank">
+                        <img width="50" height="50" src="./assets/icons/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.facebook.com/kailassarathsivadasan/" target="_blank">
+                        <img width="50" height="50" src="./assets/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/kailassarathsivadasan/" target="_blank">
+                        <img width="50" height="50" src="./assets/icons/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.youtube.com/@sarathsivadasan8639" target="_blank">
+                        <img width="50" height="50" src="./assets/icons/youtube.svg" alt="Youtube">
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer id="main-footer"></footer>
+    </body>
+</html>

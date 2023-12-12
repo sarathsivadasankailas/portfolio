@@ -1,0 +1,108 @@
+.blogs {
+    height: 100vh;
+    min-height: 1000px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/images/blogs.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.blog-header {
+    height: 30%;
+}
+
+.text-box {
+    position: relative;
+    top: 40%;
+    text-align: center;
+    font-size: 250%;
+}
+
+.text-box > h1 {
+    margin: 0;
+}
+
+.my-blog {
+    display: grid;
+    /* height: 70%; */
+    grid-template-columns: 1fr 1fr;
+}
+
+.blog-content {
+    border: 1px solid white;
+    border-radius: 25px;
+    margin: 0 15% 100px 15%;
+    text-align: center;
+}
+
+
+.description {
+    text-align: justify;
+    padding: 25px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.image img {
+    height: 200px;
+    max-width: 90%;
+    padding: 10px;
+    padding-top: 25px;
+    text-align: center;
+    object-fit: contain;
+}
+
+/* .blog-button {
+    position: inherit;
+    bottom: 50px;
+} */
+
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    margin-bottom: 25px;
+}
+
+button:hover {
+    background-color: #292929;
+    font-weight: bolder;
+}
+
+
+/********** TAB VIEW *******************/
+@media only screen and (max-width: 850px) {
+
+    .blog-header {
+        height: 20%;
+    }
+
+    .text-box {
+        font-size: 200%;
+    }
+
+    .blog-content {
+        border-radius: 25px;
+        margin: 0 8% 100px 8%;
+    }
+
+}
+
+/********** MOBILE VIEW *******************/
+@media only screen and (max-width: 600px) {
+
+    .blogs {
+        height: 100vh;
+        min-height: 2000px;
+    }
+
+    .my-blog {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

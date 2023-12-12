@@ -1,0 +1,265 @@
+/**** Get in Touch Section ****/
+#contact-section {
+    height: 800px;
+    background-color: #E8E4E4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-img img {
+    height: 800px;
+    width: 50vw;
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 40vh;
+    left: 50%;
+    width: 50%;
+    text-align: center;
+}
+
+.contact-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 250%;
+    font-weight: 300;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+form {
+    padding-top: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 100px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-bottom: 15px;
+}
+
+/* First name and Last name */
+.name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+}
+
+input, textarea {
+    width: 100%;
+    height: 30px;
+    font-size: medium;
+    padding: 5px 10px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Submit button center align*/
+.center-align {
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+label {
+    font-size: small;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+
+
+button:hover {
+    background-color: #292929;
+    font-weight: bolder;
+}
+
+.input-error {
+    border: 1px solid red;
+}
+
+.error-msg {
+    color: red;
+    font-size: 10px;
+    margin: 0;
+}
+
+/********** TAB VIEW *******************/
+@media only screen and (max-width: 850px) {
+    
+    #contact-section {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contact-img img {
+        height: auto;
+        width: 100%;
+    }
+
+    .hero-text-box {
+        position: absolute;
+        top: 50vh;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/********** MOBILE VIEW ****************/
+@media only screen and (max-width: 600px) {
+
+    .name {
+        display: flex;
+        flex-direction: column;
+        column-gap: 80px;
+    }
+}
+
+
+/*** Phone and Email details ***/
+#contact-info-section {
+    background-color: #69A5A4;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+    color: white;
+}
+
+.contact-me {
+    width: 50vw;
+    height: 500px;
+    text-align: center;
+}
+
+.contact-me img {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.phone-email {
+    margin-left: 10px;
+}
+
+.phone, .email, .social, .address {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.contact-alignment {
+    justify-content: left;
+    text-align: left;
+}
+
+.phone-no, .email-type {
+    padding-left: 35px;
+}
+
+.email-id {
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+
+/********** TAB VIEW *******************/
+@media only screen and (max-width: 850px) {
+
+    #contact-info-section {
+        column-gap: 20px;
+    }
+
+    .contact-me img {
+        height: auto;
+        width: auto;
+        max-height: 80%;
+        max-width: 80%;
+        margin: auto;
+        display: block;
+    }
+
+    .phone-email {
+        margin-left: 0;
+    }
+
+}
+
+
+/********** MOBILE VIEW ****************/
+@media only screen and (max-width: 600px) {
+    #contact-info-section {
+        display: flex;
+        flex-direction: column;
+        column-gap: 20px;
+    }
+
+    .contact-me {
+        width: 100vw;
+        height: 250px;
+        text-align: center;
+    }
+
+    .contact-me img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .phone-email {
+        margin-left: 20px;
+    }
+}
+
+
+
+/* Social Section */
+#social-section {
+    background-color: #E8E4E4;
+}
+
+.social {
+    justify-content: center;
+}
+
+.social-list {
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    column-gap: 50px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .social-list {
+        justify-content: center;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        column-gap: 25px;
+        text-align: center;
+        padding: 50px 0;
+    }
+}
