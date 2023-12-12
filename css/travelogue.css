@@ -285,10 +285,27 @@ main {
     }
 }
 
+.swiss {
+    margin-top: 50px;
+    height: 600px;
+    background-image: url('../assets/images/travelogue/EuropeTrip/swiss-1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.swiss-details {
+    width: 40vw;
+    margin: 25px;
+    text-align: justify;
+}
 
 
 /********** MOBILE VIEW *******************/
 @media only screen and (max-width: 600px) {
 
-
+    .swiss-details {
+        width: 90vw;
+        margin: 25px;
+        text-align: justify;
+    }
 }
