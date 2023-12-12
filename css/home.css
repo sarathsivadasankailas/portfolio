@@ -13,28 +13,53 @@ body {
 
 .intro {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .my-pic {
-    width: auto;
+    width: 100vw;
     height: 500px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/images/home/home-1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/home/home-1.jpg');
     background-position: center;
     background-size: cover;
+    vertical-align: middle;
+    grid-row: 2;
 }
 
+
 .about-me {
+    grid-row: 1;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about-me h2 {
+    font-size: 150%;
 }
 
 .about-content {
     text-align: justify;
-    line-height: 1.5;
+    line-height: 1.6;
     margin: 10px 10%;
 }
 
+/********** TAB VIEW *******************/
+@media only screen and (max-width: 850px) {
+
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .my-pic {
+        height: 400px;
+    }
+}
+
+
 #timeline {
+    padding-top: 100px;
     padding-bottom: 100px;
 }
 
@@ -42,6 +67,8 @@ body {
 
 .timeline-headline h2{
     font-size: 250%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .timeline-snapshot {
@@ -69,7 +96,8 @@ body {
 
 .timeline-headline {
     text-align: center;
-    padding: 50px;
+    padding-top: 250px;
+    color: white;
 }
 
 .year {
@@ -144,7 +172,7 @@ body {
     }
 
     .timeline-headline {
-        padding: 5px;
+        padding-top: 200px;
     }
 
     .year-text {
