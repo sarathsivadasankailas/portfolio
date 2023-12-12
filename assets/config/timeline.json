@@ -1,0 +1,62 @@
+[
+    {
+        "year": "1987",
+        "text": "<p>Born on 1987 to <b>Mr. Sivadasan Narayanan</b> and <b>Mrs. Sailaja Kesavan</b>, in Kadakkavur, a small village in the state of Kerala, India.</p>",
+        "image": "./assets/images/home/timeline-1987-1.jpg"
+    },
+    {
+        "year": "1990 - 2005",
+        "text": "<ul><li>Did my elementary education at C.S.I.E.M.H.S Attingal.</li><li>Completed Secondary education from Christ Nagar, Kaudiar</li></ul>",
+        "image": "./assets/images/home/timeline-2.jpg"
+    },
+    {
+        "year": "2007",
+        "text": "<p>In May 2007, we moved to our dream home in Trivandrum, Kerala.</p>",
+        "image": "./assets/images/home/timeline-2007-1.jpg"
+    },
+    {
+        "year": "2009",
+        "text": "<p>Completed my Bachelors degree from Marian Engineering College.</p>",
+        "image": "./assets/images/home/timeline-2009.jpg"
+    },
+    {
+        "year": "2010",
+        "text": "<p>In April 2010, I started my career as an Enginerring trainee at Network Systems and Technologies, Trivandrum.</p>",
+        "image": "./assets/images/home/nest.jpg"
+    }, 
+    {
+        "year": "2014",
+        "text": "<p>My current company got aquired by a technology giant Quest Global Corporation and I started my career at Quest Global.</p>",
+        "image": "./assets/images/home/quest.jpg" 
+    },
+    {
+        "year": "2015",
+        "text": "<p>Moved to the United States as part of work. Started supporting client GE Healthcare in Wauwatosa, Wisconsin.</p>",
+        "image": "./assets/images/home/timeline-2015.png"
+    },
+    {
+        "year": "2019",
+        "text": "<ul><li>Joined BJs Wholesale Club as Senior Application Developer.</li><li>Met my better half <b>Archana</b> on December 2019.</li></ul>",
+        "image": "./assets/images/home/timeline-2019-1.png"
+    },
+    {
+        "year": "2020",
+        "text": "<p>2020 was a special year for me. I married Archana on March 15, 2020.</p>",
+        "image": "./assets/images/home/timeline-2020.jpg"
+    },
+    {
+        "year": "2021",
+        "text": "<p>In 2021, as my visa got expired, moved to India from the United States.</p>",
+        "image": "./assets/images/home/timeline-2021.jpg"
+    },
+    {
+        "year": "2022",
+        "text": "<p>In May 2022, did my dream vacation to Europe with my wife and our parent.</p>",
+        "image": "./assets/images/home/timeline-2022.jpg"
+    },
+    {
+        "year": "2023",
+        "text": "<ul><li>My visa got renewed and moved back to the United States with my wife on February 2023.</li><li>In September 2023, started MS in Computer Science at Boston University.</li></ul>",
+        "image": "./assets/images/home/timeline-2023.jpg"
+    }
+]
